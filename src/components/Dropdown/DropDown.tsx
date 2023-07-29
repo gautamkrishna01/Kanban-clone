@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import './DropDown.css';
 
-export const DropDown = (props) => {
+export const DropDown = (props: any) => {
   const dropdownRef = useRef();
 
   const handleClick = (event: any) => {
