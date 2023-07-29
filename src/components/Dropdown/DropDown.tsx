@@ -4,7 +4,7 @@ import './DropDown.css';
 export const DropDown = (props: any) => {
   // const dropdownRef = useRef();
 
-  const handleClick = (event: any) => {
+  const handleClick = () => {
     // if (dropdownRef && !dropdownRef.current.contains(event.target))
     props.onClose ? props.onClose : '';
   };

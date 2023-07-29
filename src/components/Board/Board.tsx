@@ -43,7 +43,7 @@ const Board = (props: any) => {
           // displayClass='boards_card_add'
           text='Add Card'
           // placeholder='Enter Card Title || "Enter Items'
-          onSubmit={(value) => props.addCard(value, props.board?.id)}
+          onSubmit={(value: any) => props.addCard(value, props.board?.id)}
         />
       </div>
     </div>
