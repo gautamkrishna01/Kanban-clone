@@ -5,7 +5,7 @@ import Chip from '../chip/Chip';
 import { useState } from 'react';
 import { DropDown } from '../Dropdown/DropDown';
 
-const Card = (props) => {
+const Card = (props: any) => {
   const [showDropDown, setShowDropDown] = useState(false);
   return (
     <>
@@ -17,7 +17,7 @@ const Card = (props) => {
       >
         <div className='card_top'>
           <div className='card_top_labels'>
-            {props.card?.labels?.map((item, index) => (
+            {props.card?.labels?.map((item: any, index: any) => (
               <Chip key={index} text={item.text} color={item.color} />
             ))}
           </div>

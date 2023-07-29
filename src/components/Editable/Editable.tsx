@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Editable.css';
 import { RxCross2 } from 'react-icons/rx';
 
-const Editable = (props) => {
+const Editable = (props: any) => {
   const [showEdit, setShowEdit] = useState(false);
   const [inputValue, setInputValue] = useState('');
 

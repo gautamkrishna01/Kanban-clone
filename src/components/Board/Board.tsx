@@ -4,7 +4,8 @@ import Editable from '../Editable/Editable';
 import Card from '../card/Card';
 import './Board.css';
 import { FiMoreHorizontal } from 'react-icons/fi';
-const Board = (props) => {
+
+const Board = (props: any) => {
   const [showDropDown, setShowDropDown] = useState(false);
   return (
     <div className='board'>
@@ -27,7 +28,7 @@ const Board = (props) => {
         </div>
       </div>
       <div className='board_cards custom-scroll'>
-        {props.board?.cards?.map((item) => (
+        {props.board?.cards?.map((item: any) => (
           <Card
             key={item.id}
             card={item}

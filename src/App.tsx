@@ -191,7 +191,7 @@ const App = () => {
             <div className='app_boards_board'>
               <Editable
                 text='Add Board Title'
-                onSubmit={(value) => addBoard(value)}
+                onSubmit={(value: any) => addBoard(value)}
               />
             </div>
           </div>
