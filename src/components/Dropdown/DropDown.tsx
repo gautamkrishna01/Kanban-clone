@@ -2,11 +2,11 @@ import { useEffect, useRef } from 'react';
 import './DropDown.css';
 
 export const DropDown = (props: any) => {
-  const dropdownRef = useRef();
+  // const dropdownRef = useRef();
 
   const handleClick = (event: any) => {
-    if (dropdownRef && !dropdownRef.current.contains(event.target))
-      props.onClose ? props.onClose : '';
+    // if (dropdownRef && !dropdownRef.current.contains(event.target))
+    props.onClose ? props.onClose : '';
   };
 
   useEffect(() => {
@@ -18,7 +18,7 @@ export const DropDown = (props: any) => {
 
   return (
     <div
-      ref={dropdownRef}
+      // ref={dropdownRef}
       className='dropdown'
       style={{
         position: 'absolute',
